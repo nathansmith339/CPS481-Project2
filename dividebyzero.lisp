@@ -1,0 +1,8 @@
+(defun dividebyzero(critter)
+    (loop for x in (cdr (cdr critter))
+      do (if (= x 0)
+          (return-from dividebyzero 1)
+      )
+     )
+    (eval critter)
+)
