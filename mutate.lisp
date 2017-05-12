@@ -26,7 +26,7 @@
    (if (and (<= opnum 75) (> opnum) 50)
       (setq oper '*))
    (if (and (<= opnum 100) (> opnum 75))
-      (setq oper '/))
+      (setq oper 'div1))
    
    ;if the randomly generated number is 1, MUTATE!
    (if (= num 1)
